@@ -176,7 +176,7 @@ fi
 log "Downloading HandBrake sources..."
 if echo "${HANDBRAKE_URL}" | grep -q '\.git$'; then
     git clone ${HANDBRAKE_URL} handbrake
-    git -C /tmp/handbrake checkout "${HANDBRAKE_VERSION}"
+    git -C /tmp/handbrake checkout "master"
 else
     mkdir /tmp/handbrake
     curl -# -L ${HANDBRAKE_URL} | tar xj --strip 1 -C /tmp/handbrake
