@@ -155,7 +155,7 @@ VOLUME ["/trash"]
 # Metadata.
 LABEL \
       org.label-schema.name="handbrake" \
-      org.label-schema.description="Docker container for HandBrake" by me \
+      org.label-schema.description="Docker container for HandBrake" \
       org.label-schema.version="${DOCKER_IMAGE_VERSION:-}" \
       org.label-schema.vcs-url="https://github.com/jlesage/docker-handbrake" \
       org.label-schema.schema-version="1.0"
